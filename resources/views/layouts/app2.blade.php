@@ -147,11 +147,15 @@
                                 <li>
                                     @if (Route::has('user'))
                                         <a href="{{ route('user') }}">User</a>
+                                    @else
+                                        <a href="#">User</a>
                                     @endif
                                 </li>
                                 <li>
                                     @if (Route::has('product'))
                                         <a href="{{ route('product') }}">Product</a></li>
+                                    @else
+                                        <a href="#">Product</a></li>
                                     @endif
                             </ul>
                         </li>
