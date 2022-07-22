@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('last_name')->nullable();
             $table->string('username');
-            $table->string('phone_number');
-            $table->string('address');
-            $table->string('kode_pos');
-            $table->string('kota');
+            $table->string('phone_number')->nullable();
+            $table->string('address')->nullable();
+            $table->string('kode_pos')->nullable();
+            $table->string('kota')->nullable();
             $table->enum('role', ['Pembeli', 'Penjual', 'Admin'])->default('Pembeli');
             $table->enum('gender', ['Laki-laki', 'Perempuan', 'None'])->default('None');
             $table->string('email')->unique();

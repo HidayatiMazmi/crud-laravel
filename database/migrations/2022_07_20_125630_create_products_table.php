@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('code_product');
             $table->integer('price');
             $table->integer('stock');
+            $table->integer('jumlah_terjual')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
